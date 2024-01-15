@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>demo21</title>
+        <script>
+            //recursive function demo
+            function fact(n) //best implimentation of stack
+            {
+                return n==0 ? 1 : n*fact(n-1)
+               /*if(n==0)
+                return 1;
+               else{
+                return n*fact(n-1);
+               }*/
+            }
+            const a = parseInt(prompt("Enter a value",0))
+            alert("Output= "+fact(a))
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

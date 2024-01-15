@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Demo29</title>
+        <script>
+          //map object - for each method
+          const mapobj1 = new Map()
+          mapobj1.set(1,101)
+          mapobj1.set("id",1234)
+          mapobj1.set("name","klu")
+          document.writeln("Map Object 1 size= "+mapobj1.size+"</br>")
+          document.writeln("<u>Map Object 1 Value</u></br>")
+          mapobj1.forEach((value) => document.writeln(value)) 
+          //if one parameter it is value
+          //if 2 parameter then 1st is value and 2nd is key
+          document.writeln("</br>")
+          document.writeln("<u>Map Object 1 Keys & Value</u></br>")
+          mapobj1.forEach( (v,k)=>{
+            document.writeln(k+":"+v)
+          })
+
+          document.writeln("</br>")
+         const mapobj2 = new Map([ ["id",101] ,["name","klu"] ]) //constructor
+         document.writeln("Map Object 2 size= "+mapobj2.size+"</br>")
+          document.writeln("<u>Map Object 2 Value</u></br>")
+          mapobj2.forEach((v) => document.writeln(v))
+          document.writeln("</br>")
+          document.writeln("<u>Map Object 2 Keys & Value</u></br>")
+          const display = (v,k)=>{
+            document.writeln(k+":"+v)
+          }
+          mapobj2.forEach(display) //display is call back
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
